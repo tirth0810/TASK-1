@@ -1,0 +1,470 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+    <title>Job Seeker Platform</title>
+
+    <!-- sign in html -->
+    <link rel="stylesheet" href="signin.html">
+
+    
+
+
+
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOB SEEKER</a></h2>
+        <DIv class="navbar-menu">
+            <a href="#jobs">jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#testimoni">Testimonial</a>
+            <a href="#blog">Blogs</a>
+            <a href="#signin">sign In</a>
+            
+        </DIv>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+    <header> 
+        <h1 class="header-title">
+            FIND YOUR <br><span>PERFECT JOB</span><br>EASILY
+        </h1>
+    </header>
+    <!--search-->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job title or keywords">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <!--filter box-->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" name="job-level" id="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class="filter-select" name="job-function" id="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+            </select>
+            <select class="filter-select" name="employment" id="employment">
+                <option>Employment</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" name="location" id="location">
+                <option>Location</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>India</option>
+            </select>
+            <select class="filter-select" name="education" id="education">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Be</option>
+                <option>MBA</option>
+                <option>Master's Degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen ">
+            <div class="chosen-card"> 
+                Remote <i class="fas fa-times-circle"> </i>
+            </div>
+            <div class="chosen-card"> 
+                Full Time <i class="fas fa-times-circle"> </i>
+            </div>
+            <div class="chosen-card"> 
+                Financial Tech <i class="fas fa-times-circle"> </i>
+            </div>
+            <div class="chosen-card"> 
+                Entry Level  <i class="fas fa-times-circle"> </i>
+            </div>
+
+
+        </div>
+    </div>
+    <!--job listing-->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/tesla.jpg" >
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>We are hiring mechanical engineers who have more then 1 year of field experience. </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted 1 week ago
+            </DIv>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/ebay.jpg" >
+                <div class="job-detail">
+                    <h4>Ebay</h4>
+                    <h3>Business Development</h3>
+                    <p>we are hiring business developer for our company. </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted 2 mins ago
+            </DIv>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/insta.jpg" >
+                <div class="job-detail">
+                    <h4>Instagram</h4>
+                    <h3>Software Engineer</h3>
+                    <p>we are hiring software engineer for our company.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted 3 hours ago
+            </DIv>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/youtube.jpg" >
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>we are hiring UI UX designer for our company.<br> with 1 year of experience. </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted a hour ago
+            </DIv>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/facebook.jpeg" >
+                <div class="job-detail">
+                    <h4>Facebook</h4>
+                    <h3>Computer Engineer</h3>
+                    <p>we need a computer engineer which have more then 2 year of indusrial experience. </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted 2 days ago
+            </DIv>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="img/Amazon-Logo-Black.jpg" >
+                <div class="job-detail">
+                    <h4>Amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>we need one software engineer in our company for software management. </p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <DIv class="job-posted">
+                posted 2 hours ago
+            </DIv>
+        </div>
+        <button class="job-more">More List</button>
+    </section>
+
+    <!-- join -->
+
+    <section class="join" id="signin">
+        <div class="join-detail">
+            <h1 class="section-title">LETS START YOUR NEW JOB WITH US</h1>
+<P><strong>We are hiring new people and you can apply in any company <br>from our website and start new journey from our website.</strong></P>
+        </div>
+       
+<a href="http://127.0.0.1:5500/signin.html">
+            <BUTTOn class="join-button">Join Now </BUTTOn>
+        </a>
+        
+    </section>
+    
+    <!-- featured company -->
+
+    <section class="featured" id="companies">
+        <h1 class="section-title">Featured Companies</h1>
+        <p>Our featured companies are always interested in meeting new talent, whether or not they have live job listings. Learn more about them, and see who’s hiring below.
+        </p>
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img class="featured-image" src="img/ebay.jpg">
+                <p>Ebay</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/youtube.jpg">
+                <p>youtube</p>
+                <button class="featured-button">View 1 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/flipkart.png">
+                <p>flipkart</p>
+                <button class="featured-button">View 3 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/tesla.jpg">
+                <p>tesla</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/google.jpg">
+                <p>google</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/facebook.jpeg">
+                <p>facebook</p>
+                <button class="featured-button">View 4 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/apple.jpeg">
+                <p>apple</p>
+                <button class="featured-button">View 1 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="img/Amazon-Logo-Black.jpg">
+                <p>amazone</p>
+                <button class="featured-button">View 3 jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonal -->
+
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">Testimonial</h1>
+        <p>Lets see what our clients say about us</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>job seeker platform has been my go-to platform for internships and part-time gigs ever since my college years.  </h3>
+                    <div class="testimoni-pic">
+                        <img src="img/hiten.jpg">
+                        <p>Hiten Prajapati</p>
+                        <span>student</span>
+                      </div>
+                </div>
+                 
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>job seeker platform, a perfect example of scams and fakeness. Its just omg that how these guys are so good in telling lies and frauding people.</h3>
+                    <div class="testimoni-pic">
+                        <img src="img/tirth.JPG">
+                        <p>Tirth Patel</p>
+                        <span>student</span>
+                      </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>this website is very useful for finding the job and internships. from this website i got my dream company</h3>
+                    <div class="testimoni-pic">
+                        <img src="img/preet.jpg">
+                        <p>Preet Patel</p>
+                        <span>student</span>
+                      </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>you will find jobs of all levels posted here.</h3>
+                    <div class="testimoni-pic">
+                        <img src="img/savan.JPG">
+                        <p>Savan Patel</p>
+                        <span>student</span>
+                      </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>job seeker is easy to use and the interface is very attrective.</h3>
+                    <div class="testimoni-pic">
+                        <img src="img/dhruviln.jpg">
+                        <p>Dhruvil Nayak</p>
+                        <span>student</span>
+                      </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>the website is very useful for the students as well as the employees for finding the their jobs. </h3>
+                    <div class="testimoni-pic">
+                        <img src="img/dhruvilp.jpg">
+                        <p>Dhruvil Patel</p>
+                        <span>student</span>
+                      </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"> </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+
+    <section class="blog" id="blog">
+
+         <h1 class="section-title">Career Advises</h1>
+         <p>Learn more career tips from company's recruiter</p>
+         <div class="blog-wrapper">
+            <div class="blog-card">
+                <img class="blog-image" src="img/blog1.jpg">
+                <div class="blog-detail">
+                    <span>11 apr 2022</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>There are many people who are happy with their work, especially if they are in a job that matches their career and life goals. However, even with the best job, there are times when you struggle to find enjoyment in what you are doing.</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="img/blog2.jpg">
+                <div class="blog-detail">
+                    <span>10 may 2022</span>
+                    <h4>10 tips for technical interview</h4>
+                    <p>1. Consider the tools and skills necessary for the role<br>2. Study helpful books and digital publications<br></p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="img/blog3.jpg">
+                <div class="blog-detail">
+                    <span>22 dec 2022</span>
+                    <h4>managing time effectively</h4>
+                    <p>Time management is planning how to efficiently use and deliberately control the time you spend to maximize productivity. In short, get more done in less time. Other upsides include:<br>
+
+                        Better work quality<br>
+                        Less stress<br>
+                        More time to work on strategic or creative projects<br>
+                        Less procrastination<br>
+                        More self-confidence</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- footer -->
+
+      <footer>
+
+        <div class="footer-wrapper">
+            <h3>JOB SEEKER</h3>
+            <p>Job seekers who are actively job hunting generally focus on searching through online job sites and platforms. Depending on the type of role they are interested in, they might use a generalist job search site with job posts in all fields or a specialist job board targeted to specific skills or industries. </p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Explore</h4>
+            <a href="#">Top Companies</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Podcast</a>
+            <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+            <a href="#">Blog</a>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Support</h4>
+                <a href="#">Customer Service</a>
+                <a href="#">Trust and Safety</a>
+                <a href="#">Partnership</a>
+                </div>
+             
+                <div class="footer-wrapper">
+                    <h4>Community</h4>
+                    <a href="#">Community</a>
+                    <a href="#">Invite a Friend</a>
+                    <a href="#">Event</a>
+                    
+                </div>    
+      </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
